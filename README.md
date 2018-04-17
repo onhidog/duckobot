@@ -1,4 +1,4 @@
-#Duck-o-bot
+# Duck-o-bot
 
 bot para patos, encontra-se na folder duck. O resto do projecto vem do [discord.py][.py].
 pra ja nao ha grande readme, mas com tempo sera feito. O bot para ja tambem e pequeno, conseguem ainda perceber o que la esta.
