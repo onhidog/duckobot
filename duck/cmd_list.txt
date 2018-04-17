@@ -1,0 +1,9 @@
+Command list:
+  !hello
+  !duck
+  !duckest
+  !guess
+  !quack
+  !quackmf
+  !tableflip
+  !wisdom
