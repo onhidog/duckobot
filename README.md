@@ -1,3 +1,12 @@
+#Duck-o-bot
+
+bot para patos, encontra-se na folder duck. O resto do projecto vem do [discord.py][.py].
+pra ja nao ha grande readme, mas com tempo sera feito. O bot para ja tambem e pequeno, conseguem ainda perceber o que la esta.
+
+Va fica...
+
+[.py]:https://github.com/Rapptz/discord.py
+
 # discord.py
 
 [![PyPI](https://img.shields.io/pypi/v/discord.py.svg)](https://pypi.python.org/pypi/discord.py/)
