@@ -17,7 +17,7 @@ async def on_message(message):
         return
 
     elif message.content.split(' ')[0]=='!commands':
-        cmd_list = open('cmd_list.txt','r')
+        cmd_list = open('duck/cmd_list.txt','r')
         msg = cmd_list.read()
         cmd_list.close()
         await client.send_message(message.channel, msg)
@@ -82,7 +82,7 @@ async def on_message(message):
         if time.clock() < client.time_stamp_wisdom + 60:
             msg = 'Master <@434695524634066955> is coming up with his next piece of wisdom. Please wait a bit.'
         else:
-            msg = random.choice(list(open('quotes.txt'))).format(message)
+            msg = random.choice(list(open('duck/quotes.txt'))).format(message)
             client.time_stamp_wisdom = time.clock()
         await client.send_message(message.channel, msg)
 
