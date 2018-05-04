@@ -1,6 +1,7 @@
 import discord
 import random
 import time
+import os
 
 client = discord.Client()
 client.time_stamp_wisdom=time.clock()
@@ -94,8 +95,6 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-# client.run('token')
-token_file = open('token.tok','r')
-token = token_file.read()
-token_file.close()
+
+token = os.environ['DISCORD_TOKEN']
 client.run(token)
