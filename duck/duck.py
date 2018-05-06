@@ -4,8 +4,8 @@ import time
 import os
 
 client = discord.Client()
-client.time_stamp_wisdom=time.clock()
-client.time_stamp_bad=time.clock()
+client.time_stamp_wisdom=time.time()
+client.time_stamp_bad=time.time()
 client.time_stamp_wisdom-=60
 
 bad_words=['fuck','merda']
@@ -79,11 +79,11 @@ async def on_message(message):
         await client.send_message(message.channel, msg)
 
     elif message.content.split(' ')[0]=='!wisdom':
-        if time.clock() < client.time_stamp_wisdom + 60:
+        if time.time() < client.time_stamp_wisdom + 60:
             msg = 'Master <@434695524634066955> is coming up with his next piece of wisdom. Please wait a bit.'
         else:
             msg = random.choice(list(open('duck/quotes.txt'))).format(message)
-            client.time_stamp_wisdom = time.clock()
+            client.time_stamp_wisdom = time.time()
         await client.send_message(message.channel, msg)
 
 
